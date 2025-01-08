@@ -90,3 +90,7 @@ console.log("All complete");
 console.log("discord-app start");
 console.log("mention app start")
 console.log("Success");
+
+Deno.cron("Continuous Request", "*/2 * * * *", () => {
+  console.log("running...")
+})
